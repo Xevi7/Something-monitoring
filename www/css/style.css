@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* login page  */
+
+#body_login > div {
+    background-color: #9fc4de;
+    position: fixed;
+    width: 26%;
+    height: 50%;
+    left: 37%;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#body_login > div > div {
+    margin-top: 20px;
+}
+
+#body_login form > div {
+    margin-top: 10px;
+}
+
+#body_login form input {
+    padding: 7px;
+    border-radius: 5px;
+    width: 18vw;
+}
+
+#body_login form button {
+    margin-top: 30px;
+    padding: 10px;
+    width: 18vw;
+    border-radius: 5px;
+    background-color: #7da7c6;
+    font-weight: bold;
+    color: rgb(19, 148, 19);
+}
+
+#body_login #errUser {
+    height: 16px;
+    color: red;
+}
+
+/* end login page  */
+
+/* header */
+
+#header {
+    background-color: #c8d8e4;
+    padding: 10px;
+    width: 99.06vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > div > div {
+    display: inline-block;
+}
+
+#header > div > div > a {
+    text-decoration: none;
+    background-color: #52ab98;
+    padding: 3vh 1vh 1vh 1vh;
+    border-radius: 5px;
+}
+
+#header > div > div > a > img {
+    height: 4vh;
+}
+
+#header > div > div > a > h2 {
+    display: inline-block;
+    color: white;
+}
+
+#header > div > hr {
+    height: 5vh;
+    width: 3px;
+    margin: 0px 3px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#header > div > div:nth-child(3) {
+    background-color: white;
+    padding: 2vh 1vh 0.5vh 1vh;
+    border-radius: 5px;
+    color: #52ab98;
+}
+
+#header > div > img {
+    width: 4vw;
+}
+
+#header > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#header > div > form button {
+    color: white;
+    background-color: rgb(250, 86, 86);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* end header  */
+
+
+/* branchList */
+
+#branchList {
+    background-color: #2b6777;
+    width: 150px;
+    min-height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+#branchList > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branchName {
+    padding: 10px;
+    background-color: #2b6777;
+    color: white;
+    border-radius: 5px;
+    margin: 3px auto;
+    font-size: medium;
+    font-weight: bold;
+    border : none;
+    outline: none;
+}
+
+/* end branchList */
+
+/* body_home */
+
+#body_home {
+    display: flex;
+}
+
+#branchStats > div {
+    display: flex;
+}
+
+#branchStats > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9fc4de;
+    margin: 50px 0px 0 50px;
+    height: 30vh;
+    width: 17vw;
+    padding: 0 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+#branchStats > div > div > a {
+    color: white;
+    font-weight: bold;
+}
+
+#branchStats > div > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: white;
+}
+
+#branchStats > div > div > div > img {
+    height: 70px;
+    margin: 0 20px;
+}
+
+#body_home #emptyStats {
+    display: block;
+    margin: auto;
+}
+
+/* end body_home */
+
+/* body_employee, #body_customer, #body_stock */
+
+.emptySearch {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#body_employee, #body_customer, #body_stock {
+    display: flex;
+}
+
+.tabHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+
+.tabHeader button, .tabHeader h2 {
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: #9fc4de;
+    color: white;
+}
+
+.tabHeader .emptyTrash {
+    background-color: rgb(250, 86, 86);
+    padding: 7.5px 7px;
+}
+
+.tabHeader > div {
+    display: flex;
+}
+
+.tabHeader form {
+    margin-right: 10px;
+}
+
+.tabHeader form input {
+    padding: 8px;
+    padding-left: 25px;
+    border-radius: 5px;
+    background-image: url("../assets/search.png");
+    background-position: 6px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.tabHeader img {
+    width: 1.5vw;
+}
+
+#body_employee > div:nth-child(3), #body_customer > div:nth-child(3), #body_stock > div:nth-child(3), #body_trashCan > div:nth-child(3), #body_sales > div:nth-child(3) {
+    width: 82vw;
+}
+
+#body_employee > div > div > form > table, #body_customer > div > div > form > table, #body_stock > div > div > form > table {
+    margin: 4px 50px;
+    width: 82vw;
+}
+
+#body_employee > div > div > form > table th, #body_employee > div > div > form > table td, #body_customer > div > div > form > table th, #body_customer > div > div > form > table td, #body_stock > div > div > form > table th, #body_stock > div > div > form > table td {
+    padding: 1vh 3vw;
+}
+
+#body_stock > div > div > form > table td {
+    text-align: center;
+}
+
+.editEmployee, .deleteEmployee, .editCustomer, .deleteCustomer, .editStock, .deleteStock {
+    margin-top: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.editEmployee, .editCustomer, .editStock {
+    background-color: #9fc4de;
+}
+
+.deleteEmployee, .deleteCustomer, .deleteStock {
+    background-color: rgb(250, 86, 86);
+}
+
+.editEmployee img, .deleteEmployee img, .editCustomer img, .deleteCustomer img, .editStock img, .deleteStock img {
+    display: inline-block;
+    width: 1.7vw;
+}
+
+.editSuccess, .addList, .addSuccess, .editList , .deleteList, .deleteSuccess, .restoreList, .restoreSuccess, .emptyAsk, .emptySuccess {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: #c8d8e4;
+    border-radius: 5px;
+    display: none;
+}
+
+.editList, .editSuccess, .deleteList, .deleteSuccess, .restoreList, .restoreSuccess, .emptyAsk, .emptySuccess {
+    display: block;
+}
+
+.editList > div, .deleteList > div, .restoreList > div, .emptyAsk > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.deleteList > div > h2, .restoreList > div > h2 {
+    text-align: center;
+}
+
+.deleteList > div > div, .restoreList > div > div {
+    margin-top: 50px;
+}
+
+.deleteList table td, .deleteList table, .restoreList table td, .restoreList table {
+    border: black solid 1px;
+}
+
+.deleteList table td, .restoreList table td {
+    padding: 5px;
+}
+
+.deleteList button, .restoreList button, .emptyAsk button {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.deleteList .cancelDelBtn, .restoreList .cancelResBtn, .emptyAsk .cancelEmpBtn {
+    margin-right: 5vw;
+    background-color: rgb(250, 86, 86);
+}
+
+.deleteList .yesDelBtn, .restoreList .yesResBtn, .emptyAsk .yesEmpBtn {
+    margin-left: 5vw;
+    padding: 10px 19px;
+    background-color: rgb(19, 148, 19);
+}
+
+.addList > div {
+    margin: 50px;
+}
+
+.addList > div > h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #9fc4de;
+    border-radius: 5px;
+}
+
+.editList .input-box, .addList .input-box, .addList .input-date {
+    margin-top: 10px;
+}
+
+.editList .input-box > span, .addList .input-box > span, .addList .input-date > span {
+    display: inline-block;
+    width: 10vw;
+}
+
+.editList .input-box > input, .addList .input-box > input, .addList .input-date > input {
+    width: 20vw;
+    padding: 2px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.editList .input-box > div, .addList .input-box > div, .addList .input-date > div {
+    color: red;
+    height: 16px;
+}
+
+.editList > div > div > form > div:last-child, .addList > div > form > div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.editList input[type=button], .editList button, .addList input[type=button], .addList button {
+    border-radius: 5px;
+    padding: 4px 20px;
+    margin-left: 30px;
+    background-color: rgb(19, 148, 19);
+}
+
+.editList button, .addList button {
+    margin-left: 0;
+    margin-right: 30px;
+    background-color: rgb(250, 86, 86);
+}
+
+.editSuccess > div, .addSuccess > div, .deleteSuccess > div, .restoreSuccess > div, .emptySuccess > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.editSuccess > div > img, .addSuccess > div > img, .deleteSuccess > div > img, .restoreSuccess > div > img, .emptySuccess > div > img {
+    width: 8.5vw;
+}
+
+.editSuccess button, .addSuccess button, .deleteSuccess button, .restoreSuccess button, .emptySuccess button {
+    position: absolute;
+    bottom: 30%;
+    padding: 5px 15px;
+    background-color: #9fc4de;
+    border-radius: 5px;
+}
+
+/* end body_employee, #body_customer, #body_stock */
+
+/* body_auditLog, body_trashCan, body_sales */
+
+#body_auditLog, #body_trashCan, #body_sales {
+    display: flex;
+}
+
+#body_auditLog > div:nth-child(3) {
+    width: 82vw;
+}
+
+.auditList, .dataList {
+    margin-top: 15px;
+    margin-left: 50px;
+    padding: 15px;
+    background-color: #9fc4de;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataList > div {
+    display: flex;
+    align-items: center;
+}
+
+.dataList > div > div {
+    margin-left: 10px;
+}
+
+.auditDetail, .dataDetail {
+    margin-left: 50px;
+    padding: 15px 15px 15px 25px;
+    background-color: #c8d8e4;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+
+.arrowDetail img {
+    width: 2vw;
+}
+
+.arrowDetail .rotate {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.arrowDetail .rotate.down {
+    -moz-transform:rotate(-180deg);
+    -webkit-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+}
+
+.dataDetail button {
+    margin-top: 20px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #9fc4de;
+}
+
+.dataImage {
+    height: 5vh;
+}
+
+#body_sales img {
+    width: 50vw;
+}
+
+.salesImage {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.recentSales {
+    margin: 15px 0 20px 50px;
+    border-radius: 5px;
+    background-color: #7da7c6;
+    width: 82vw;
+    height: 50vh;
+    overflow: auto;
+}
+
+.recentSales::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+}
+
+.recentSales::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.recentSales .salesList {
+    background-color: #9fc4de;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80vw;
+    margin-left: 1vw;
+    margin-top: 10px;
+    color: white;
+}
+
+.salesList > div {
+    color: black;
+}
+
+/* end body_auditLog, body_trashCan, body_sales */
